@@ -6,13 +6,16 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body{
+.container{
     width: 100%;
     min-height: 100vh;
     background-image: url(images/planet-space-abstract-background-digital-art-hd-wallpaper-uhdpaper.com-234@0@g.jpg);
     padding: 10px;
     background-position: center;
     background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -22,8 +25,8 @@ body{
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    margin: 100px auto 20px;
     padding: 40px 30px 70px;
+    margin-top: -200px;
     border-radius: 10px;
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
@@ -111,6 +114,8 @@ body{
     position: relative;
     text-align: end;
     user-select: none;
+    font-size: 12px;
+    width: 100%;
 }
 
 
@@ -122,7 +127,7 @@ body{
     border: none;
     outline: none;
     background: #0b4e69;
-    padding: 10px;
+    padding: 8px;
     border-radius: 8px;
     cursor: pointer;
     color: #ffff;
@@ -162,48 +167,10 @@ body{
     margin-bottom: 1rem;
 }
 
-@media (max-width: 690px) {
+@media (max-width: 600px) {
     .todo-app{
-        width: 90%;
-        max-width: 540px;
-        background: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        margin: 100px auto 20px;
-        padding: 40px 30px 70px;
-        border-radius: 10px;
-        -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-        -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        width: 100%;
     }
 
-    .row{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background: #0f1d2e;
-        border-radius: 10px;
-        padding-left: 15px;
-        margin-bottom: 20px;
-        height: 40px;
-    }
 
-    .row #btnAdd{
-        border: none;
-        outline: none;
-        padding: 10px;
-        background: #0b4e69;
-        font-size: 20px;
-        border-radius: 8px;
-        cursor: pointer;
-        color: #ffff;
-        transition: all 0.3s ease;
-        height: 40px;
-        width: 40px;
-        margin-left: -20px;
     }
-
-    body{
-        background-image: url(images/planet-space-abstract-background-digital-art-hd-wallpaper-uhdpaper.com-234@0@g.jpg);
-    }
-}
